@@ -1,1 +1,1 @@
-<?php /* Data2-Security-System-V1.0 */ function D2BLOCKWPLOGIN(){ http_response_code(404); exit('#404 - No found'); } if($_SERVER['HTTP_CF_IPCOUNTRY'] != 'BR' || strpos($_SERVER['HTTP_ACCEPT_LANGUAGE'], 'pt-BR') === false){D2BLOCKWPLOGIN();} ?>
+<?php /* Data2-Security-System-V1.0 */ function D2BLOCKWPLOGIN(){ http_response_code(404); exit('#404 - No found'); } if($_SERVER['HTTP_CF_IPCOUNTRY'] != 'BR' || empty($_SERVER['HTTP_ACCEPT_LANGUAGE']) ){D2BLOCKWPLOGIN();} ?>
