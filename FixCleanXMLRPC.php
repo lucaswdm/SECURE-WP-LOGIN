@@ -1,8 +1,8 @@
 <?php
 
 
-        $PATH = __DIR__ . '/';
-        $SHELL = "find -maxdepth 4 -name xmlrpc.php";
+        $PATH = '/data/';
+        $SHELL = "find '.$PATH.' -maxdepth 4 -name xmlrpc.php";
         $LINES = explode(PHP_EOL, shell_exec($SHELL));
         foreach($LINES as $file)
         {
